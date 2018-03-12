@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Threading.Tasks;
 
-namespace Discord {
+namespace Discord.API {
 
     public class User {
 
@@ -34,11 +34,6 @@ namespace Discord {
 
         [JsonProperty("email")]
         public string email;
-
-
-        public User() {
-
-        }
 
         public static async Task<User> getCurrentUser() {
             User user = null;

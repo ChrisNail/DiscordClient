@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>rePlayDiscordBot</RootNamespace>
     <AssemblyName>rePlayDiscordBot</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <PublishUrl>publish\</PublishUrl>
@@ -27,6 +27,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -64,12 +65,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Discord\Activity.cs" />
-    <Compile Include="Discord\Channel.cs" />
+    <Compile Include="Discord\API\Common\Activity.cs" />
+    <Compile Include="Discord\API\Common\Channel.cs" />
+    <Compile Include="Discord\API\Controller\GuildController.cs" />
     <Compile Include="Discord\DiscordClient.cs" />
-    <Compile Include="Discord\Guild.cs" />
-    <Compile Include="Discord\GuildMember.cs" />
-    <Compile Include="Discord\User.cs" />
+    <Compile Include="Discord\API\Common\Guild.cs" />
+    <Compile Include="Discord\API\Common\GuildMember.cs" />
+    <Compile Include="Discord\API\Common\User.cs" />
     <Compile Include="PermissionLevel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -92,6 +94,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

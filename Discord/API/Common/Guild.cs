@@ -5,7 +5,7 @@ using System.Collections.Specialized;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace Discord {
+namespace Discord.API {
 
     public class Guild {
 
@@ -103,19 +103,19 @@ namespace Discord {
          * List of Roles
          */
         //[JsonProperty("roles")]
-        //public List<Role> roles;
+        //public Role[] roles;
 
         /*
          * List of Custom Emojis
          */
         //[JsonProperty("emojis")]
-        //public List<Emoji> emojis;
+        //public Emoji[] emojis;
 
         /*
          * List of enabled features
          */
         [JsonProperty("features")]
-        public List<string> features;
+        public string[] features;
 
         /*
          * Required MFA level
@@ -175,58 +175,24 @@ namespace Discord {
          * List of Voice states
          */
         //[JsonProperty("voice_states")]
-        //public List<Voice> voiceStates;
+        //public Voice[] voiceStates;
 
         /*
          * List of Guild Members
          */
         [JsonProperty("members")]
-        public List<GuildMember> members;
+        public GuildMember[] members;
 
         /*
          * List of Channels
          */
         [JsonProperty("channels")]
-        public List<Channel> channels;
+        public Channel[] channels;
 
         /*
          * List of Presence Updates on Guild Users
          */
         //[JsonProperty("presences")]
-        //public List<PresenceUpdate> presences;
-
-        /*
-         * Creates an empty Guild object
-         */
-        public Guild() {
-            features = new List<string>();
-            members = new List<GuildMember>();
-            channels = new List<Channel>();
-        }
-
-
-        public static async Task<Guild> getGuild(string guildId) {
-            Guild guild = null;
-            HttpResponseMessage response = await DiscordClient.getClient().GetAsync(DiscordClient.BASE_URL + string.Format(GuildEndpoints.GET_GUILD, guildId));
-            if (response.IsSuccessStatusCode) {
-                NameValueCollection result = await response.Content.ReadAsFormDataAsync();
-                Console.WriteLine(result);
-            }
-
-            return guild;
-        }
-    }
-
-    class GuildEndpoints {
-
-        public static readonly string CREATE_GUILD = "/guilds";
-
-        public static readonly string GET_GUILD = "/guilds/{0}";
-
-        public static readonly string LIST_CHANNELS = "/guilds/{0}/channels";
-
-        public static readonly string LIST_MEMBERS = "/guilds/{0}/members";
-
-        public static readonly string GET_MEMBER = "/guilds/{0}/members/{1}";
+        //public PresenceUpdate[] presences;
     }
 }
