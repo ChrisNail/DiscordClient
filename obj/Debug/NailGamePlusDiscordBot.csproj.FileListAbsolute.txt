@@ -1,0 +1,10 @@
+E:\Programming\GitHub\NailDiscordBot\bin\Debug\rePlayDiscordBot.exe.config
+E:\Programming\GitHub\NailDiscordBot\bin\Debug\rePlayDiscordBot.exe
+E:\Programming\GitHub\NailDiscordBot\bin\Debug\rePlayDiscordBot.pdb
+E:\Programming\GitHub\NailDiscordBot\bin\Debug\Newtonsoft.Json.dll
+E:\Programming\GitHub\NailDiscordBot\bin\Debug\System.Net.Http.Formatting.dll
+E:\Programming\GitHub\NailDiscordBot\bin\Debug\Newtonsoft.Json.xml
+E:\Programming\GitHub\NailDiscordBot\bin\Debug\System.Net.Http.Formatting.xml
+E:\Programming\GitHub\NailDiscordBot\obj\Debug\NailGamePlusDiscordBot.csprojResolveAssemblyReference.cache
+E:\Programming\GitHub\NailDiscordBot\obj\Debug\rePlayDiscordBot.exe
+E:\Programming\GitHub\NailDiscordBot\obj\Debug\rePlayDiscordBot.pdb

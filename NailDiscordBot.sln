@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NailDiscordBot", "NailDiscordBot.csproj", "{FAB67793-6A04-4847-B7F6-1A2A7FD33D78}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NailGamePlusDiscordBot", "NailGamePlusDiscordBot.csproj", "{FAB67793-6A04-4847-B7F6-1A2A7FD33D78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

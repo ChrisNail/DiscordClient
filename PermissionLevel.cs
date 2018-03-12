@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NailDiscordBot {
+namespace NailGamePlus {
 
     public enum PermissionLevel : byte {
         User = 0,
