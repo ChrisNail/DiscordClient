@@ -1,9 +1,4 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.Net.Http;
-using System.Threading.Tasks;
 
 namespace Discord.API {
 
@@ -102,14 +97,14 @@ namespace Discord.API {
         /*
          * List of Roles
          */
-        //[JsonProperty("roles")]
-        //public Role[] roles;
+        [JsonProperty("roles")]
+        public Role[] roles;
 
         /*
          * List of Custom Emojis
          */
-        //[JsonProperty("emojis")]
-        //public Emoji[] emojis;
+        [JsonProperty("emojis")]
+        public Emoji[] emojis;
 
         /*
          * List of enabled features
@@ -174,8 +169,8 @@ namespace Discord.API {
         /*
          * List of Voice states
          */
-        //[JsonProperty("voice_states")]
-        //public Voice[] voiceStates;
+        [JsonProperty("voice_states")]
+        public VoiceState[] voiceStates;
 
         /*
          * List of Guild Members
@@ -192,7 +187,31 @@ namespace Discord.API {
         /*
          * List of Presence Updates on Guild Users
          */
-        //[JsonProperty("presences")]
-        //public PresenceUpdate[] presences;
+        [JsonProperty("presences")]
+        public PresenceUpdate[] presences;
+    }
+
+    enum DefaultMessageNotificationLevel {
+        ALL_MESSAGES = 0,
+        ONLY_MENTIONS = 1
+    }
+
+    enum ExplicitContentFilterLevel {
+        DISABLED = 0,
+        MEMBERS_WITHOUT_ROLES = 1,
+        ALL_MEMBERS = 2
+    }
+
+    enum MFALevel {
+        NONE = 0,
+        ELEVATED = 1
+    }
+
+    enum VerificationLevel {
+        NONE = 0,
+        LOW = 1,
+        MEDIUM = 2,
+        HIGH = 3,
+        VERY_HIGH = 4
     }
 }

@@ -65,18 +65,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Discord\API\Common\Activity.cs" />
-    <Compile Include="Discord\API\Common\Channel.cs" />
+    <Compile Include="Discord\API\Common\Guild\PresenceUpdate.cs" />
+    <Compile Include="Discord\API\Common\Guild\Activity.cs" />
+    <Compile Include="Discord\API\Common\Guild\Channel\Message\Attachment.cs" />
+    <Compile Include="Discord\API\Common\Guild\Channel.cs" />
+    <Compile Include="Discord\API\Common\Guild\Channel\Message\Embed.cs" />
+    <Compile Include="Discord\API\Common\Guild\Channel\Message\Embed\EmbedAuthor.cs" />
+    <Compile Include="Discord\API\Common\Guild\Channel\Message\Embed\EmbedField.cs" />
+    <Compile Include="Discord\API\Common\Guild\Channel\Message\Embed\EmbedFooter.cs" />
+    <Compile Include="Discord\API\Common\Guild\Channel\Message\Embed\EmbedImage.cs" />
+    <Compile Include="Discord\API\Common\Guild\Channel\Message\Embed\EmbedProvider.cs" />
+    <Compile Include="Discord\API\Common\Guild\Channel\Message\Embed\EmbedThumbnail.cs" />
+    <Compile Include="Discord\API\Common\Guild\Channel\Message\Embed\EmbedVideo.cs" />
+    <Compile Include="Discord\API\Common\Guild\Emoji.cs" />
+    <Compile Include="Discord\API\Common\Guild\GuildBan.cs" />
+    <Compile Include="Discord\API\Common\Guild\GuildIntegration.cs" />
+    <Compile Include="Discord\API\Common\Guild\GuildIntegrationAccount.cs" />
+    <Compile Include="Discord\API\Common\Invite.cs" />
+    <Compile Include="Discord\API\Common\InviteMetadata.cs" />
+    <Compile Include="Discord\API\Common\Guild\Channel\Message.cs" />
+    <Compile Include="Discord\API\Common\Guild\Channel\Message\MessageActivity.cs" />
+    <Compile Include="Discord\API\Common\Guild\Channel\Message\MessageApplication.cs" />
+    <Compile Include="Discord\API\Common\Guild\Channel\Message\Reaction.cs" />
+    <Compile Include="Discord\API\Common\Guild\Role.cs" />
+    <Compile Include="Discord\API\Common\Guild\Channel\RoleOverwrite.cs" />
+    <Compile Include="Discord\API\Common\Guild\UserConnection.cs" />
+    <Compile Include="Discord\API\Common\Guild\VoiceState.cs" />
+    <Compile Include="Discord\API\Common\VoiceRegion.cs" />
     <Compile Include="Discord\API\Controller\GuildController.cs" />
+    <Compile Include="Discord\API\Controller\UserController.cs" />
     <Compile Include="Discord\DiscordClient.cs" />
     <Compile Include="Discord\API\Common\Guild.cs" />
-    <Compile Include="Discord\API\Common\GuildMember.cs" />
+    <Compile Include="Discord\API\Common\Guild\GuildMember.cs" />
     <Compile Include="Discord\API\Common\User.cs" />
-    <Compile Include="PermissionLevel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="NailBot.cs" />
-    <Compile Include="Settings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

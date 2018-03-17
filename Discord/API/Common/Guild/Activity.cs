@@ -20,6 +20,24 @@ namespace Discord.API {
 
         [JsonProperty("url")]
         public string url;
+
+        [JsonProperty("timestamps")]
+        public Timestamps timestamps;
+
+        [JsonProperty("application_id")]
+        public string applicationId;
+
+        [JsonProperty("details")]
+        public string details;
+
+        [JsonProperty("state")]
+        public string state;
+
+        [JsonProperty("party")]
+        public Party party;
+
+        [JsonProperty("assets")]
+        public Assets assets;
     }
 
     class ActivityType {

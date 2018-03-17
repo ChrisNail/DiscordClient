@@ -17,8 +17,6 @@ namespace NailGamePlus {
 
             client = new DiscordClient(token);
 
-            User.getCurrentUser();
-
             while(true) {
 
             }

@@ -36,8 +36,8 @@ namespace Discord.API {
         /*
          * List of Role Overwrites
          */
-        //[JsonProperty("permission_overwrites")]
-        //public List<RoleOverwrite> permissionOverwrites;
+        [JsonProperty("permission_overwrites")]
+        public RoleOverwrite[] permissionOverwrites;
 
         /*
          * Name
@@ -79,7 +79,7 @@ namespace Discord.API {
          * Recipient Users of a DM
          */
         [JsonProperty("recipients")]
-        public List<User> recipients;
+        public User[] recipients;
 
         /*
          * Icon hash
@@ -112,16 +112,12 @@ namespace Discord.API {
         public int lastPinTimestamp;
     }
 
-    class ChannelType {
+    enum ChannelType {
 
-        public readonly int GUILD_TEXT = 0;
-
-        public readonly int DM = 1;
-
-        public readonly int GUILD_VOICE = 2;
-
-        public readonly int GROUP_DM = 3;
-
-        public readonly int GUILD_CATEGORY = 4;
+        GUILD_TEXT = 0,
+        DM = 1,
+        GUILD_VOICE = 2,
+        GROUP_DM = 3,
+        GUILD_CATEGORY = 4
     }
 }

@@ -1,9 +1,14 @@
-﻿
+﻿using Newtonsoft.Json;
+using System.Net.Http;
+using System.Threading.Tasks;
+
 namespace Discord.API.Controller {
 
     public class GuildController {
 
-
+        /*
+         * 
+         */
         public static async Task<Guild> getGuild(DiscordClient client, string guildId) {
             Guild guild = null;
             HttpResponseMessage response = await DiscordClient.getClient().GetAsync(DiscordClient.BASE_URL + string.Format(GuildEndpoints.GET_GUILD, guildId));
@@ -14,8 +19,6 @@ namespace Discord.API.Controller {
 
             return guild;
         }
-
-
     }
 
     class GuildEndpoints {
