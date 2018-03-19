@@ -1,7 +1,9 @@
 ﻿using Newtonsoft.Json;
+using System;
 
 namespace Discord.API {
 
+    [JsonObject("message")]
     public class Message {
 
         [JsonProperty("id")]
@@ -17,16 +19,16 @@ namespace Discord.API {
         public string content;
 
         [JsonProperty("timestamp")]
-        public int timestamp;
+        public Int32 timestamp;
 
         [JsonProperty("edited_timestamp")]
-        public int editedTimestamp;
+        public Int32 editedTimestamp;
 
         [JsonProperty("tts")]
-        public bool textToSpeech;
+        public Boolean textToSpeech;
 
         [JsonProperty("mention_everyone")]
-        public bool mentionEveryone;
+        public Boolean mentionEveryone;
 
         [JsonProperty("mentions")]
         public User[] userMentions;
@@ -47,13 +49,13 @@ namespace Discord.API {
         public string nonce;
 
         [JsonProperty("pinned")]
-        public bool pinned;
+        public Boolean pinned;
 
         [JsonProperty("webhook_id")]
         public string webhookId;
 
         [JsonProperty("type")]
-        public int type;
+        public Int32 type;
 
         [JsonProperty("activity")]
         public MessageActivity messageActivity;

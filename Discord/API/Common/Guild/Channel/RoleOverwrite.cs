@@ -1,7 +1,9 @@
 ﻿using Newtonsoft.Json;
+using System;
 
 namespace Discord.API {
 
+    [JsonObject("permission_overwrite")]
     public class RoleOverwrite {
 
         [JsonProperty("id")]
@@ -11,9 +13,9 @@ namespace Discord.API {
         public string type;
 
         [JsonProperty("allow")]
-        public int allow;
+        public Int32 allow;
 
         [JsonProperty("deny")]
-        public int deny;
+        public Int32 deny;
     }
 }

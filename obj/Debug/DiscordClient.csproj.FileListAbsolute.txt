@@ -1,0 +1,10 @@
+E:\Programming\GitHub\DiscordClient\obj\Debug\DiscordClient.csprojResolveAssemblyReference.cache
+E:\Programming\GitHub\DiscordClient\obj\Debug\rePlayDiscordBot.exe
+E:\Programming\GitHub\DiscordClient\obj\Debug\rePlayDiscordBot.pdb
+E:\Programming\GitHub\DiscordClient\bin\Debug\rePlayDiscordBot.exe.config
+E:\Programming\GitHub\DiscordClient\bin\Debug\rePlayDiscordBot.exe
+E:\Programming\GitHub\DiscordClient\bin\Debug\rePlayDiscordBot.pdb
+E:\Programming\GitHub\DiscordClient\bin\Debug\Newtonsoft.Json.dll
+E:\Programming\GitHub\DiscordClient\bin\Debug\System.Net.Http.Formatting.dll
+E:\Programming\GitHub\DiscordClient\bin\Debug\Newtonsoft.Json.xml
+E:\Programming\GitHub\DiscordClient\bin\Debug\System.Net.Http.Formatting.xml

@@ -2,6 +2,7 @@
 
 namespace Discord.API {
 
+    [JsonObject("invite")]
     public class Invite {
 
         [JsonProperty("code")]

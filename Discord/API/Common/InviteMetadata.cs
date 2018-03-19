@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System;
 
 namespace Discord.API {
 
@@ -8,21 +9,21 @@ namespace Discord.API {
         public User inviter;
 
         [JsonProperty("uses")]
-        public int uses;
+        public Int32 uses;
 
         [JsonProperty("max_uses")]
-        public int maxUses;
+        public Int32 maxUses;
 
         [JsonProperty("max_age")]
-        public int maxAge;
+        public Int32 maxAge;
 
         [JsonProperty("temporary")]
-        public bool temporary;
+        public Boolean temporary;
 
         [JsonProperty("created_at")]
-        public int createdAt;
+        public Int32 createdAt;
 
         [JsonProperty("revoked")]
-        public bool revoked;
+        public Boolean revoked;
     }
 }

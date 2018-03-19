@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.Linq;
-using System.Net.Http;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using System.Threading.Tasks;
+﻿using Newtonsoft.Json;
+using System;
 
 namespace Discord.API {
 
+    [JsonObject("user")]
     public class User {
 
         [JsonProperty("id")]
@@ -24,13 +19,13 @@ namespace Discord.API {
         public string avatar;
 
         [JsonProperty("bot")]
-        public bool bot;
+        public Boolean bot;
 
         [JsonProperty("mfa_enabled")]
-        public bool mfaEnabled;
+        public Boolean mfaEnabled;
 
         [JsonProperty("verified")]
-        public bool verified;
+        public Boolean verified;
 
         [JsonProperty("email")]
         public string email;

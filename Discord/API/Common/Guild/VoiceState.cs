@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System;
 
 namespace Discord.API {
 
@@ -17,18 +18,18 @@ namespace Discord.API {
         public string sessionId;
 
         [JsonProperty("deaf")]
-        public bool deaf;
+        public Boolean deaf;
 
         [JsonProperty("mute")]
-        public bool mute;
+        public Boolean mute;
 
         [JsonProperty("self_deaf")]
-        public bool selfDeaf;
+        public Boolean selfDeaf;
 
         [JsonProperty("self_mute")]
-        public bool selfMute;
+        public Boolean selfMute;
 
         [JsonProperty("suppress")]
-        public bool suppress;
+        public Boolean suppress;
     }
 }

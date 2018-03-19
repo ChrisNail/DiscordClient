@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Discord.API {
 
+    [JsonObject("channel")]
     public class Channel {
 
         /*
@@ -19,7 +20,7 @@ namespace Discord.API {
          * Channel Type
          */
         [JsonProperty("type")]
-        public int type;
+        public Int32 type;
 
         /*
          * Snowflake ID of the Guild
@@ -31,7 +32,7 @@ namespace Discord.API {
          * Sorting position
          */
         [JsonProperty("position")]
-        public int position;
+        public Int32 position;
 
         /*
          * List of Role Overwrites
@@ -55,7 +56,7 @@ namespace Discord.API {
          * NSFW flag
          */
         [JsonProperty("nsfw")]
-        public bool nsfw;
+        public Boolean nsfw;
 
         /*
          * Snowflake ID of last Message
@@ -67,13 +68,13 @@ namespace Discord.API {
          * Bitrate in bits (Voice Channel)
          */
         [JsonProperty("bitrate")]
-        public int bitrate;
+        public Int32 bitrate;
 
         /*
          * User limit (Voice Channel)
          */
         [JsonProperty("user_limit")]
-        public int userLimit;
+        public Int32 userLimit;
 
         /*
          * Recipient Users of a DM
@@ -109,7 +110,7 @@ namespace Discord.API {
          * Timestamp of last pinned Message
          */
         [JsonProperty("last_pin_timestamp")]
-        public int lastPinTimestamp;
+        public Int32 lastPinTimestamp;
     }
 
     enum ChannelType {

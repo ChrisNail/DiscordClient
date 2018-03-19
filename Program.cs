@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Discord;
+using Discord.API;
+using Discord.API.Service;
+using System;
 
 namespace NailGamePlus {
 
@@ -10,8 +9,20 @@ namespace NailGamePlus {
 
         static void Main(string[] args) {
             Console.WriteLine("Starting RePlayBot");
-            NailBot bot = new NailBot();
-            
+            Console.Write("Enter Token: ");
+            string token = Console.ReadLine();
+
+            DiscordClient client = new DiscordClient(token);
+
+            Guild guild = new Guild();
+            guild.name = "New Name";
+
+            GuildService.ModifyGuild(client, "268831414634545152", guild);
+
+            while(true) {
+
+            }
+
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System;
 
 namespace Discord.API {
 
@@ -14,19 +15,19 @@ namespace Discord.API {
         public string type;
 
         [JsonProperty("enabled")]
-        public bool enabled;
+        public Boolean enabled;
 
         [JsonProperty("syncing")]
-        public bool syncing;
+        public Boolean syncing;
 
         [JsonProperty("role_id")]
         public string roleId;
 
         [JsonProperty("expire_behavior")]
-        public int expireBehavior;
+        public Int32 expireBehavior;
 
         [JsonProperty("expire_grace_period")]
-        public int expireGracePeriod;
+        public Int32 expireGracePeriod;
 
         [JsonProperty("user")]
         public User user;
@@ -35,6 +36,6 @@ namespace Discord.API {
         public GuildIntegrationAccount account;
 
         [JsonProperty("synced_at")]
-        public int syncedAt;
+        public Int32 syncedAt;
     }
 }

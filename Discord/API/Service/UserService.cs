@@ -1,10 +1,11 @@
 ﻿using Newtonsoft.Json;
+using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace Discord.API.Controller {
+namespace Discord.API.Service {
 
-    public class UserController {
+    public class UserService {
 
         /*
          * 

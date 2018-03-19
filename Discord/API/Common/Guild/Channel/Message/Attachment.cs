@@ -1,7 +1,9 @@
 ﻿using Newtonsoft.Json;
+using System;
 
 namespace Discord.API {
 
+    [JsonObject("attachment")]
     public class Attachment {
 
         [JsonProperty("id")]
@@ -11,7 +13,7 @@ namespace Discord.API {
         public string filename;
 
         [JsonProperty("size")]
-        public int size;
+        public Int32 size;
 
         [JsonProperty("url")]
         public string url;
@@ -20,9 +22,9 @@ namespace Discord.API {
         public string proxyUrl;
 
         [JsonProperty("height")]
-        public int height;
+        public Int32 height;
 
         [JsonProperty("width")]
-        public int width;
+        public Int32 width;
     }
 }

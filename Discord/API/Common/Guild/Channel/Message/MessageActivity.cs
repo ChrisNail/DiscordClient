@@ -1,11 +1,13 @@
 ﻿using Newtonsoft.Json;
+using System;
 
 namespace Discord.API {
 
+    [JsonObject("activity")]
     public class MessageActivity {
 
         [JsonProperty("type")]
-        public int type;
+        public Int32 type;
 
         [JsonProperty("party_id")]
         public string partyId;

@@ -1,7 +1,9 @@
 ﻿using Newtonsoft.Json;
+using System;
 
 namespace Discord.API {
 
+    [JsonObject("thumbnail")]
     public class EmbedThumbnail {
 
         [JsonProperty("url")]
@@ -11,9 +13,9 @@ namespace Discord.API {
         public string proxyUrl;
 
         [JsonProperty("height")]
-        public int height;
+        public Int32 height;
 
         [JsonProperty("width")]
-        public int width;
+        public Int32 width;
     }
 }

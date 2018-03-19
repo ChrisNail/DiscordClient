@@ -2,6 +2,7 @@
 
 namespace Discord.API {
 
+    [JsonObject("footer")]
     public class EmbedFooter {
 
         [JsonProperty("text")]

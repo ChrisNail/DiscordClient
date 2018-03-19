@@ -31,23 +31,18 @@ namespace Discord.API {
          * Join date timestamp 
          */
         [JsonProperty("joined_at")]
-        public int joinDate;
+        public Int32 joinDate;
 
         /*
          * Deaf flag
          */
         [JsonProperty("deaf")]
-        public bool deaf;
+        public Boolean deaf;
 
         /*
          * Mute flag
          */
         [JsonProperty("mute")]
-        public bool mute;
-
-        
-        public GuildMember() {
-
-        }
+        public Boolean mute;
     }
 }

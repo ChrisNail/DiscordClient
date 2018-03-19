@@ -1,7 +1,9 @@
 ﻿using Newtonsoft.Json;
+using System;
 
 namespace Discord.API {
 
+    [JsonObject("embed")]
     public class Embed {
 
         [JsonProperty("title")]
@@ -17,10 +19,10 @@ namespace Discord.API {
         public string url;
 
         [JsonProperty("timestamp")]
-        public int timestamp;
+        public Int32 timestamp;
 
         [JsonProperty("color")]
-        public int color;
+        public Int32 color;
 
         [JsonProperty("footer")]
         public EmbedFooter footer;

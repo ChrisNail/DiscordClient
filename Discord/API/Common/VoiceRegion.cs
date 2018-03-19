@@ -1,6 +1,9 @@
 ﻿using Newtonsoft.Json;
+using System;
 
 namespace Discord.API {
+
+    [JsonObject("voice_region")]
     public class VoiceRegion {
 
         [JsonProperty("id")]
@@ -10,15 +13,15 @@ namespace Discord.API {
         public string name;
 
         [JsonProperty("vip")]
-        public bool vip;
+        public Boolean vip;
 
         [JsonProperty("optimal")]
-        public bool optimal;
+        public Boolean optimal;
 
         [JsonProperty("deprecated")]
-        public bool deprecated;
+        public Boolean deprecated;
 
         [JsonProperty("custom")]
-        public bool custom;
+        public Boolean custom;
     }
 }

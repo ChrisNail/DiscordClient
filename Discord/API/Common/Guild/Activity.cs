@@ -1,12 +1,9 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Discord.API {
 
+    [JsonObject("activity")]
     public class Activity {
 
 
@@ -15,14 +12,14 @@ namespace Discord.API {
 
 
         [JsonProperty("type")]
-        public int type;
+        public Int32 type;
 
 
         [JsonProperty("url")]
         public string url;
 
         [JsonProperty("timestamps")]
-        public Timestamps timestamps;
+        public ActivityTimestamps timestamps;
 
         [JsonProperty("application_id")]
         public string applicationId;
@@ -34,10 +31,10 @@ namespace Discord.API {
         public string state;
 
         [JsonProperty("party")]
-        public Party party;
+        public ActivityParty party;
 
         [JsonProperty("assets")]
-        public Assets assets;
+        public ActivityAssets assets;
     }
 
     class ActivityType {

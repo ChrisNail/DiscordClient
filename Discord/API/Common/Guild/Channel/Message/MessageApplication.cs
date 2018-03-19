@@ -2,6 +2,7 @@
 
 namespace Discord.API {
 
+    [JsonObject("application")]
     public class MessageApplication {
 
         [JsonProperty("id")]

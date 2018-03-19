@@ -14,7 +14,7 @@ namespace Discord.API {
         public string type;
 
         [JsonProperty("revoked")]
-        public bool revoked;
+        public Boolean revoked;
 
         [JsonProperty("integrations")]
         public GuildIntegration[] integrations;

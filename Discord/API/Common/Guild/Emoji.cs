@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System;
 
 namespace Discord.API {
 
@@ -17,12 +18,12 @@ namespace Discord.API {
         public User user;
 
         [JsonProperty("require_colons")]
-        public bool requireColons;
+        public Boolean requireColons;
 
         [JsonProperty("managed")]
-        public bool managed;
+        public Boolean managed;
 
         [JsonProperty("animated")]
-        public bool animated;
+        public Boolean animated;
     }
 }

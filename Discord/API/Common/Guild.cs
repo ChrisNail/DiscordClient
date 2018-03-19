@@ -1,7 +1,9 @@
 ﻿using Newtonsoft.Json;
+using System;
 
 namespace Discord.API {
 
+    [JsonObject("guild")]
     public class Guild {
 
         /*
@@ -32,7 +34,7 @@ namespace Discord.API {
          * Current User is owner
          */
         [JsonProperty("owner")]
-        public bool owner;
+        public Boolean owner;
 
         /*
          * Snowflake ID of the owner
@@ -44,7 +46,7 @@ namespace Discord.API {
          * Current User permissions
          */
         [JsonProperty("permissions")]
-        public int permissions;
+        public Int32 permissions;
 
         /*
          * Voice region ID
@@ -62,13 +64,13 @@ namespace Discord.API {
          * AFK timeout in seconds
          */
         [JsonProperty("afk_timeout")]
-        public int afkTimeout;
+        public Int32 afkTimeout;
 
         /*
          * Is Guild embeddable
          */
         [JsonProperty("embed_enabled")]
-        public bool embedEnabled;
+        public Boolean embedEnabled;
 
         /*
          * Snowflake ID of embedded channel
@@ -80,19 +82,19 @@ namespace Discord.API {
          * Verification Level
          */
         [JsonProperty("verification_level")]
-        public int verificationLevel;
+        public Int32 verificationLevel;
 
         /*
          * Default Message notifications level
          */
         [JsonProperty("default_message_notifications")]
-        public int defaultMessageNotifications;
+        public Int32 defaultMessageNotifications;
 
         /*
          * Explicit content filter level
          */
         [JsonProperty("explicit_content_filter")]
-        public int explicitContentFilter;
+        public Int32 explicitContentFilter;
 
         /*
          * List of Roles
@@ -116,7 +118,7 @@ namespace Discord.API {
          * Required MFA level
          */
         [JsonProperty("mfa_level")]
-        public int mfaLevel;
+        public Int32 mfaLevel;
 
         /*
          * Snowflake ID of Guild creator (Bot)
@@ -128,7 +130,7 @@ namespace Discord.API {
          * Widget enabled
          */
         [JsonProperty("widget_enabled")]
-        public bool widgetEnabled;
+        public Boolean widgetEnabled;
 
         /*
          * Snowflake ID for Widget Channel
@@ -146,25 +148,25 @@ namespace Discord.API {
          * Guild creation timestamp
          */
         [JsonProperty("joined_at")]
-        public int createDate;
+        public Int32 createDate;
 
         /*
          * Large Guild flag
          */
         [JsonProperty("large")]
-        public bool large;
+        public Boolean large;
 
         /*
          * Guild unavailable flag
          */
         [JsonProperty("unavailable")]
-        public bool unavailable;
+        public Boolean unavailable;
 
         /*
          * Total Guild member count
          */
         [JsonProperty("member_count")]
-        public int memberCount;
+        public Int32 memberCount;
 
         /*
          * List of Voice states

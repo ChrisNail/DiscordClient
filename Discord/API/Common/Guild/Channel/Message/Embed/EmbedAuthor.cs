@@ -2,6 +2,7 @@
 
 namespace Discord.API {
 
+    [JsonObject("author")]
     public class EmbedAuthor {
 
         [JsonProperty("name")]

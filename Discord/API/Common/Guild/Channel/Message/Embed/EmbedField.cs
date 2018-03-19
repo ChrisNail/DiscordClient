@@ -2,6 +2,7 @@
 
 namespace Discord.API {
 
+    [JsonObject("field")]
     public class EmbedField {
 
         [JsonProperty("name")]
@@ -11,6 +12,6 @@ namespace Discord.API {
         public string value;
 
         [JsonProperty("inline")]
-        public bool inline;
+        public Boolean inline;
     }
 }

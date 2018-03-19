@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System;
 
 namespace Discord.API {
 
@@ -11,21 +12,21 @@ namespace Discord.API {
         public string name;
 
         [JsonProperty("color")]
-        public int color;
+        public Int32 color;
 
         [JsonProperty("hoist")]
-        public bool hoist;
+        public Boolean hoist;
 
         [JsonProperty("position")]
-        public int position;
+        public Int32 position;
 
         [JsonProperty("permissions")]
-        public int permissions;
+        public Int32 permissions;
 
         [JsonProperty("managed")]
-        public bool managed;
+        public Boolean managed;
 
         [JsonProperty("mentionable")]
-        public bool mentionable;
+        public Boolean mentionable;
     }
 }
