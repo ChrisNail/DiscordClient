@@ -8,3 +8,14 @@ E:\Programming\GitHub\DiscordClient\bin\Debug\Newtonsoft.Json.dll
 E:\Programming\GitHub\DiscordClient\bin\Debug\System.Net.Http.Formatting.dll
 E:\Programming\GitHub\DiscordClient\bin\Debug\Newtonsoft.Json.xml
 E:\Programming\GitHub\DiscordClient\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\ChristopherNail\Documents\Github\DiscordClient\obj\Debug\DiscordClient.csprojResolveAssemblyReference.cache
+C:\Users\ChristopherNail\Documents\Github\DiscordClient\obj\Debug\DiscordClient.csproj.CoreCompileInputs.cache
+C:\Users\ChristopherNail\Documents\Github\DiscordClient\obj\Debug\rePlayDiscordBot.exe
+C:\Users\ChristopherNail\Documents\Github\DiscordClient\obj\Debug\rePlayDiscordBot.pdb
+C:\Users\ChristopherNail\Documents\Github\DiscordClient\bin\Debug\rePlayDiscordBot.exe.config
+C:\Users\ChristopherNail\Documents\Github\DiscordClient\bin\Debug\rePlayDiscordBot.exe
+C:\Users\ChristopherNail\Documents\Github\DiscordClient\bin\Debug\rePlayDiscordBot.pdb
+C:\Users\ChristopherNail\Documents\Github\DiscordClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ChristopherNail\Documents\Github\DiscordClient\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\ChristopherNail\Documents\Github\DiscordClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ChristopherNail\Documents\Github\DiscordClient\bin\Debug\System.Net.Http.Formatting.xml

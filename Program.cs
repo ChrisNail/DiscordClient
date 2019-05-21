@@ -1,28 +1,40 @@
 ﻿using Discord;
-using Discord.API;
-using Discord.API.Service;
+using Discord.API.Library;
 using System;
+using Discord.API.Rest;
 
 namespace NailGamePlus {
 
     class Program {
 
         static void Main(string[] args) {
-            Console.WriteLine("Starting RePlayBot");
             Console.Write("Enter Token: ");
             string token = Console.ReadLine();
 
-            DiscordClient client = new DiscordClient(token);
+            DiscordClient.setToken(token);
 
-            Guild guild = new Guild();
-            guild.name = "New Name";
+            Guild[] guilds = UserService.getCurrentUserGuilds().Result;
 
-            GuildService.ModifyGuild(client, "268831414634545152", guild);
+            Channel[] channels = GuildService.getGuildChannels(guilds[0].id).Result;
 
-            while(true) {
-
+            string channelId = null;
+            foreach (Channel c in channels) {
+                if(c.name.Equals("botcommands")) {
+                    channelId = c.id;
+                }
             }
 
+            if (channelId != null) {
+                Message[] messages = ChannelService.getChannelMessages(channelId, null, null, null, 2).Result;
+                Console.WriteLine(messages[0].content);
+                BulkDeleteMessageParams messageParams = new BulkDeleteMessageParams();
+                messageParams.messages = new string[] { messages[0].id, messages[1].id };
+                bool result = ChannelService.bulkDeleteMessages(channelId, messageParams).Result;
+                Console.WriteLine("Success: " + result);
+            }
+
+            Console.Write("Press any key to exit...");
+            Console.ReadLine();
         }
     }
 }
